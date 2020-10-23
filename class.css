@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'bignoodletoo'; /*to use later*/
+    src: url('font/bignoodletoo.ttf'); /*URL to the font*/
+}
+.pic{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right: 10px;
+    
+    float:right;
+}
+.controlPanel {
+    background: rgb(26, 26, 26);
+    display:inline-block;
+    vertical-align:middle;
+    padding: 3px;
+    margin-bottom:;
+    border-radius: 0;
+    width: 100%;
+    
+}
+input{
+    user-select: none;
+    vertical-align:middle;
+    background: #2f2f2f;
+    color: #f2f2f2;
+    border: 0 ;
+    height: 30px;
+    font-family: arial;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px 20px;
+}
+#bg{
+    
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+   font-family: 'bignoodletoo'; 
+}
+.liner, .linerw, .linerl, .Rank, .Rating, .win, .loss{
+    display:inline-block;
+    font-size: 50px;
+    vertical-align:middle;
+}
+.liner, .win, .loss{
+    
+    vertical-align:middle;
+}
+.linerl{margin-left: 20px;}
+.Rating{
+    margin-left: 40px;
+    font-size: 50px;
+}
+.Rank{
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+}
+.win, .loss {
+    margin-left: 10px;
+}
