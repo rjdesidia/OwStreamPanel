@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="class.css">
     <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
 </head>
-<body>
+<body style='overflow-x:hidden;'>
     <div class="controlPanel">
-        
-        <input type="button" id="buttonCountW" value="win">
+        <div class="menu">win</div>
+        <input type="button" id="buttonCountW" value="+">
         <input type="button" id="buttonCountWm" value="-">
-        <input type="button" id="buttonCountL" value="loss">
+        <div class="menu">loss</div>
+        <input type="button" id="buttonCountL" value="+">
         <input type="button" id="buttonCountLm" value="-">
         <input type="number" step="10" value="2500" name="counter1" id="counter1" name="counter1" id="counter1" placeholder="Skill Rating" min="0" max="5000">
         <!-- <input type="color"  id="bg" value="#405275">
