@@ -2,6 +2,7 @@
     font-family: 'bignoodletoo'; /*to use later*/
     src: url('font/bignoodletoo.ttf'); /*URL to the font*/
 }
+<<<<<<< HEAD
 body{
     margin: 0;
     padding: 0;
@@ -11,6 +12,9 @@ body{
     font-size: 14px;
     color: #f2f2f2;
 }
+=======
+body {overflow-x:hidden;}
+>>>>>>> master
 .pic{
     display:inline-block;
     vertical-align:middle;
