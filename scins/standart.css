@@ -1,0 +1,42 @@
+
+.overlay {font-family: 'bignoodletoo'; 
+
+
+}
+
+ .liner, .linerw, .linerl, .Rank, .Rating, .win, .loss{
+    display:inline-block;
+    font-size: 50px;
+    vertical-align:middle;
+}
+
+.liner, .win, .loss{
+    
+    vertical-align:middle;
+}
+.linerl{margin-left: 20px;}
+.Rating{
+    margin-left: 40px;
+    font-size: 50px;
+}
+.Rank{
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+}
+.win, .loss {
+    margin-left: 10px;
+}
+
+.role {
+    z-index: 20;
+    margin-left: -70px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    width: 13px;
+    height: 13px;
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}

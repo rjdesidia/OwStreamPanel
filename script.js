@@ -74,18 +74,12 @@ let bg = document.getElementById("bg");
 let font = document.getElementById("font");
 let apply =  document.getElementById("applyColor");
 let tr = document.getElementById("trn");
-// let trh = tr.value.toString(16);
-// apply.onclick = function() {
-    // document.getElementById("ov").style.backgroundColor = bg.value+(Number(tr.value).toString(16));
-    // document.getElementById("ov").style.color = font.value;
-    // document.getElementById("ov").style.color = colorPicker.color.$; 
-    // console.log(colorPicker);
-// };
+
 var colorPicker = new iro.ColorPicker('#picker', {
     width: 100,
     margin: 1,
-    padding: 1,
-    handleRadius: 4,
+    padding: 0,
+    handleRadius: 3,
     layout: [
       { 
         component: iro.ui.Slider,
@@ -125,8 +119,8 @@ var colorPicker = new iro.ColorPicker('#picker', {
 var colorPicker = new iro.ColorPicker('#picker2', {
     width: 100,
     margin: 1,
-    padding: 1,
-    handleRadius: 4,
+    padding: 0,
+    handleRadius: 3,
     layout: [
       { 
         component: iro.ui.Slider,
@@ -162,3 +156,34 @@ var colorPicker = new iro.ColorPicker('#picker2', {
       document.getElementById("ov").style.color = color.hexString;
     }
   });
+
+  let tavc = document.getElementById("tanc");
+  let dd = document.getElementById("dd");
+  let sup = document.getElementById("sup");
+  
+  tanc.onclick = function() { 
+        document.getElementById("tanc").style.backgroundColor = "#888888";
+        document.getElementById("dd").style.backgroundColor = "#2f2f2f";
+        document.getElementById("sup").style.backgroundColor = "#2f2f2f";
+        document.getElementById("rolei").src = "img/icon-tanc.png";
+      };
+   dd.onclick = function() { 
+        document.getElementById("tanc").style.backgroundColor = "#2f2f2f";
+        document.getElementById("dd").style.backgroundColor = "#888888";
+        document.getElementById("sup").style.backgroundColor = "#2f2f2f";
+        document.getElementById("rolei").src = "img/icon-dd.png";
+      };
+   sup.onclick = function() { 
+        document.getElementById("tanc").style.backgroundColor = "#2f2f2f";
+        document.getElementById("dd").style.backgroundColor = "#2f2f2f";
+        document.getElementById("sup").style.backgroundColor = "#888888";
+        document.getElementById("rolei").src = "img/icon-sup.png";
+      };
+
+let scin = document.getElementById("scins");
+scin.onclick = function() {
+  console.log(scin.value);
+  document.getElementById("scin").href = "scins/"+scin.value+".css";
+}
+console.log(scin);
+

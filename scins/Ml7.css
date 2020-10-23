@@ -1,0 +1,30 @@
+.overlay{
+    margin-left: -130px;
+    margin-top: -50px;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+.Rank,
+.role,
+.linerw{transform: scale(0);}
+.win{margin-right: -20px}
+.linerl {transform: scale(0);}
+.loss {margin-left: -20px;}
+.Rating{z-index: 2; margin-left: -140px;}
+
+
+.win:before {content:"W: ";}
+.loss:before {content:"/ L: ";}
+.Rating:before {content:"SR:";}
+
+.overlay
+.Rank,
+.role,
+.linerw,
+.win,
+.linerl ,
+.loss ,
+.Rating
+
+{display:inline-block;
+vertical-align:middle;}

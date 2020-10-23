@@ -6,26 +6,53 @@
     <title>Document</title>
     <link rel="stylesheet" href="class.css">
     <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" id="scin" href="scins/standart.css">
 </head>
 <body style='overflow-x:hidden;'>
     <div class="controlPanel">
-        <div class="menu">win</div>
-        <input type="button" id="buttonCountW" value="+">
-        <input type="button" id="buttonCountWm" value="-">
-        <div class="menu">loss</div>
-        <input type="button" id="buttonCountL" value="+">
-        <input type="button" id="buttonCountLm" value="-">
-        <input type="number" step="10" value="2500" name="counter1" id="counter1" name="counter1" id="counter1" placeholder="Skill Rating" min="0" max="5000">
-        <!-- <input type="color"  id="bg" value="#405275">
-        <input type="range" id=trn min="1" max="255" step="5" value="255" style="margin: 0; padding: 0; width: 80px;"> 
-        <input type="color"  id="font" value="#f99e1a">
-        <input type="button" id="applyColor" value="apply"> -->
-        <div class="pic" id="picker" style="display: inline-block;"></div>
-        <div class="pic" id="picker2" style="display: inline-block;"></div>
+        <div class="menu">
+            <div class="text">Win</div>
+            <input type="button" id="buttonCountW" value="+" >
+             <input type="button" id="buttonCountWm" value="-">
+        </div>
+        <div class="menu">
+            <div class="text">Loss</div>
+            <input type="button" id="buttonCountL" value="+">
+            <input type="button" id="buttonCountLm" value="-">
+        </div>
+        <div class="menu">
+            <div class="text">Skill Rating</div>
+            <input type="number" step="10" value="2500" name="counter1" id="counter1" name="counter1" id="counter1" placeholder="Skill Rating" min="0" max="5000">
+        </div>
+        <div class="menu">
+            <div class="text">Background</div>
+            <div class="pic" id="picker" style="display: inline-block;"></div>
+        </div>
+        <div class="menu">
+            <div class="text">Text color</div>
+            <div class="pic" id="picker2" style="display: inline-block;"></div>
+        </div>
+        <div class="menu">
+            <div class="text">Role</div>
+            <div class="button" id="tanc"><img src="/img/icon-tanc.png" alt="" ></div>
+            <div class="button" id="dd"><img src="/img/icon-dd.png" alt="" ></div>
+            <div class="button" id="sup"><img src="/img/icon-sup.png" alt="" ></div>
+        </div>
+        <div class="menu">
+            <div class="text">Skin</div>
+            <select class="select" id="scins">
+                <option value="Standart" selected="selected">Standart</option>
+                <option value="Ml7">Ml7</option>
+                <option value="QarQ">QarQ</option>
+            </select>
+        </div>
     </div>
+    
     
     <div class="overlay" id="ov">
         <img class="Rank" id="Ril" src="img/overwatch-platinum-rank-badge.png" alt="">
+        <img class="role" id="rolei" src="img/icon-tanc.png" alt="">
         <div class="linerw" >win</div>
         <div class="win"  id="buttonCountNumberW">0</div>
         <div class="linerl">loss</div>
