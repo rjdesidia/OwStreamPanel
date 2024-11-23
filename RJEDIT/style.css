@@ -328,3 +328,15 @@ button:active {
     background-color: rgb(41 40 46);
     transition: 0.3s;
 }
+.name{
+    
+        position: absolute;
+        left: 30%;
+        bottom: 3px;
+        padding: 7PX;
+        font-size: xx-small;
+        color: #4e4e4e;
+        background: #1a1a1a;
+    
+}
+.name:hover{color: #868686;}
